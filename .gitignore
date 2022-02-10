@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.drake
+*.docx#
+*.pdf
+*.tex
+manuscript/manuscript.docx
+data/HILIC-standards
+exports

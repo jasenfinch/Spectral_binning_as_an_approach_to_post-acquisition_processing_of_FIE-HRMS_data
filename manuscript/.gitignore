@@ -1,0 +1,7 @@
+*.html
+spectral_binning.log
+spectral_binning_files
+spectral_binning.pdf
+spectral_binning.synctex.gz
+spectral_binning_cache
+manuscript.log
