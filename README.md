@@ -8,7 +8,7 @@ This is the code and analysis repository for the article:
 Finch, J.P., Wilson, T., Lyons, L., Phillips, H., Beckmann, M., and Draper, J., 2022. "Spectral binning as an approach to post-acquisition processing of high resolution FIE-MS metabolome fingerprinting data"
 
 All code is written in R and the [drake](https://docs.ropensci.org/drake/) package has been used for workflow management.
-The [renv](https://github.com/rstudio/renv) package has been used to ensure a reproducible `R` environment.
+The [renv](https://github.com/rstudio/renv) package has been used to ensure a reproducible R environment.
 
 ## Compile the manuscript
 
