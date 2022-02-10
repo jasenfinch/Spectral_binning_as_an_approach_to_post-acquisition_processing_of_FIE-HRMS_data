@@ -1,6 +1,6 @@
 # Spectral binning as an approach to post-acquisition processing of high resolution FIE-MS metabolome fingerprinting data
 
-[![Docker](https://github.com/jasenfinch/Spectral_binning_as_an_approach_to_post-acquisition_processing_of_FIE-HRMS_data/workflows/Docker/badge.svg?branch=devel)](https://github.com/jasenfinch/Spectral_binning_as_an_approach_to_post-acquisition_processing_of_FIE-HRMS_data/actions)
+[![Docker](https://github.com/jasenfinch/Spectral_binning_as_an_approach_to_post-acquisition_processing_of_FIE-HRMS_data/actions/workflows/dockerpublish.yml/badge.svg)](https://github.com/jasenfinch/Spectral_binning_as_an_approach_to_post-acquisition_processing_of_FIE-HRMS_data/actions/workflows/dockerpublish.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This is the code and analysis repository for the article:
