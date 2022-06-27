@@ -163,8 +163,8 @@ These mass analysers have provided extraordinary increases in attainable mass re
 But this has also created new challenges for the post-acquisition spectral processing of mass spectra obtained from these instruments with magnitude increases in the volumes of data that can be acquired per sample.
  
 These magnitude increases in data volume require the development of computationally efficient processing routines, especially for processing large sample sets.
-Spectral artefacts such as Gibbs oscillations that are common in Fourier Transform based MS adds further complexity [@marshall2008].
-Similarly, the alignment of spectra between samples can also make processing difficult over long analytical runs containing many samples [@draper2013].
+Spectral artefacts such as Gibbs oscillations, that are common in Fourier Transform based MS, adds further complexity [@marshall2008].
+Similarly, the alignment of mass spectra between samples can also make processing difficult, especially in analytical runs containing many samples [@draper2013].
 Approaches such as the *proFIA* R package have already attempted to overcome some of these challenges [@delabriere2017].
 
 Here, we present a spectral binning based approach as an efficient and pragmatic solution to the post-acquisition processing of FIE-HRMS metabolome fingerprinting data.
