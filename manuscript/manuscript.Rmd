@@ -191,7 +191,7 @@ Mass spectra were acquired on an Exactive Orbitrap (ThermoFinnigan, San Jose CA)
 A sample volume of 20 $\mu$L was injected and delivered to the electro-spray ionisation (ESI) source via a 'plug' flow solvent of pre-mixed HPLC grade MeOH (Fisher Scientific) and ultra-pure H~2~O (18.2 $\Omega$) at a ratio of 7:3. 
 The initial flow rate was 60 $\mu$L min^-1^ for 0.4 minutes and increased to 200 $\mu$L min^-1^ over 0.8 minutes. 
 The flow rate was maintained at 200 $\mu$L min^-1^ for 0.3 minutes then increased to 600 $\mu$L min^-1^ over 1.5 minutes. 
-Then the flow rate was then returned to 60 $\mu$L min^-1^ for 0.5 minutes. 
+Then the flow rate was returned to 60 $\mu$L min^-1^ for 0.5 minutes. 
 The total gradient time was 3.5 minutes. The capillary temperature and voltage were set at 270 ^$\circ$^C and 37.50 kV respectively. 
 
 For the *B. distachyon* leaf and human urine samples, mass spectra were acquired using a single scan filter for each of the positive and negative ionisation modes. 
