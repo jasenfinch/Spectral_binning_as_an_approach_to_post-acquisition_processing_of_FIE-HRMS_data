@@ -1,4 +1,8 @@
 
+if (!dir.exists('exports/supplementary_materials'))
+  dir.create('exports/supplementary_materials',
+             recursive = TRUE)
+
 manuscript <- drake_plan(
   
   ## compile supplementary methods
