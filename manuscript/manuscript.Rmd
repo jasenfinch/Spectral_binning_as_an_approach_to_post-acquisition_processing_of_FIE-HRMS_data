@@ -158,7 +158,7 @@ It is often applied to perform initial "first pass" analyses, which rapidly prov
 Potential perturbation relating to differences in phenotype can then be evaluated, and used to generate hypotheses or guide decision making on the next steps of sample analysis or experimentation before the application of more targeted chromatography based techniques [@beckmann2008].
 FIE-MS fingerprinting has been used for a wide range of biological applications such as the identification human urinary biomarkers of nutrition and the investigation of plant-fungal pathogen interactions [@lloyd2013; @parker2009].
 
-In the last decade, there has been a proliferation in the use of high resolution (HR) MS instrumentation with Orbitrap mass analysers becoming the standard for HRMS.
+In the last decade, there has been a proliferation in the use of ultra-high resolution (HR) MS instrumentation with Orbitrap mass analysers becoming the standard for HRMS.
 These mass analysers have provided extraordinary increases in attainable mass resolution, precision and accuracy.
 But this has also created new challenges for the post-acquisition spectral processing of mass spectra obtained from these instruments with magnitude increases in the volumes of data that can be acquired per sample.
  
