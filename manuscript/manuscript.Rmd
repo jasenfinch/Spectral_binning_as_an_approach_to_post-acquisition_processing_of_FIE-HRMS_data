@@ -304,7 +304,7 @@ The peak RAM usage was taken as the maximum RAM usage observed during each test.
 The optimal width with which to spectral bin FIE-HRMS fingerprinting data is a compromise between the retention of resolution whilst minimising the impacts of instrumental or processing artefacts.
 
 As the amu width of spectral binning decreased, there was an exponential increase in the number of spectral features observed along with an increase in the proportion of missing values across all the example biological matrices (Supplementary Tables S2 & S3).
-This was a result of the measured deviation in *m/z* peaks both between each scan of a sample and between samples.
+This was a result of the measured deviation in *m/z* signals both between each scan of a sample and between samples.
 The peak at 133.01416 *m/z* from the *B. distachyon* leaf matrix was found to deviate by a range of up to  `r format(scan_deviation, scientific = FALSE) %>% as.character()` amu between the infusion scans of a single injection and `r format(sample_deviation,scientific = FALSE) %>% as.character()` amu across the 10 injections (Supplementary Figure S3). 
 These deviations are due changes in parameters such as temperature and space charge compensation during the Fourier transformation, which is calculated on a scan by scan basis [@hu2005]. 
 This means that *m/z* have the potential to freely shift between bins at widths of 0.0001 or less and so contribute to the high proportions of missing data. 
@@ -333,7 +333,7 @@ Based on the factors discussed above, the application of the spectral binning ap
 
 It is a requisite that the accurate *m/z* assigned to the 0.01 width amu bins using this approach are able to provide sufficient accuracy to enable the putative assignment of molecular formulas and metabolite annotations. 
 
-The accuracy of some of the extracted accurate m/z peaks from the chemical standards mix are shown in Table \@ref(tab:accurate-masses).
+The accuracy of some of the extracted accurate *m/z* signals from the chemical standards mix are shown in Table \@ref(tab:accurate-masses).
 A full list of the matched accurate *m/z* can be found in Supplementary Table S4. 
 Out of a total of `r nrow(standards_adduct_mzs)` predicted ionisation products based on the selected common adducts, `r unique_matches` (`r signif(unique_matches/nrow(standards_adduct_mzs) * 100,digits = 3)`%) were matched to accurate *m/z* that had been assigned to 0.01 amu bins.
 These matches had an average ppm error of `r ppm_error$Mean` (SE = $\pm$ `r ppm_error$SE`) with `r below_3_ppm` (`r prop_below_3_ppm`%) having an error below 3 ppm.
