@@ -165,7 +165,7 @@ But this has also created new challenges for the post-acquisition spectral proce
 These magnitude increases in data volume require the development of computationally efficient processing routines, especially for processing large sample sets.
 Spectral artefacts such as Gibbs oscillations, that are common in Fourier Transform based MS, adds further complexity [@marshall2008].
 Similarly, the alignment of mass spectra between samples can also make processing difficult, especially in analytical runs containing many samples [@draper2013].
-Approaches such as the *proFIA* R package have already attempted to overcome some of these challenges [@delabriere2017].
+Approaches such as that of @smedsgaard2005 and the *proFIA* R package have already attempted to overcome some of these challenges [@delabriere2017].
 
 Here, we present a spectral binning based approach as an efficient and pragmatic solution to the post-acquisition processing of FIE-HRMS metabolome fingerprinting data.
 This is accompanied by the development of the openly available R package *binneR* as a user-friendly implementation of the approach.
@@ -452,7 +452,8 @@ standards_base_peak_matches %>%
       booktabs = TRUE,
       linesep = '',
       caption = 'Extracted accurate \\textit{m/z} base peaks for 0.01 amu bins detected for compounds in the mix of chemical standards. The top ten most abundant base peaks are shown. For a full list of detected peaks see Supplementary Table S4.',
-      escape = FALSE,) %>%
+      escape = FALSE,
+      digits = 8) %>%
   kable_styling(font_size = 10,
                 latex_options = 'HOLD_position') %>% 
   column_spec(1,'3cm') %>% 
