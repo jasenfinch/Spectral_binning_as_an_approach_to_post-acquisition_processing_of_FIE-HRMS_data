@@ -396,9 +396,15 @@ The proposed bin metrics, along with the visualisation of bin spectra, can be us
 Spectral bins found to be explanatory for a given biological question by downstream data analyses and suspected to potentially contain *m/z* from multiple compounds, could be investigated further by applying a peak detection routine such as the continuous wavelet transform [@zheng2016].
 The relative intensities can then be compared to potentially identify the *m/z* responsible for the explanatory bin.
 
-An alternative approach for processing FIE-HRMS data by the *proFIA* R package attempts to detect peaks in the chromatographic dimension of the infusion profile as opposed to the spectral dimension [@delabriere2017]. 
-This method ensures the detection of the most robust peaks; however the performance of this approach could be susceptible to information loss from poor peak shapes as a result of a short infusion profiles and low abundance peaks.
-Spectral binning is also comparatively faster with processing taking approximately 1 second per file compared to the reported speed of approximately less than 15 seconds [@delabriere2017]. 
+An alternative approach for processing FIE-HRMS data by the *proFIA* R package attempts to detect peaks in the chromatographic dimension using a peak picking approach of the infusion profile as opposed to the spectral dimension [@delabriere2017]. This method ensures the detection of the most robust peaks; however, the performance of this approach and peak picking approaches, in general, is that they could be susceptible to information loss. Peaks with poor shape, as a result of short infusion profiles or low abundance, could be missed or incorrectly picked by these routines.
+The vast majority of *m/z* signals found within FIE-HRMS spectra are of low abundance and close to the baseline. However, these features can often still provide useful information for downstream data mining and it is important that this information is retained.
+
+The poor performance of a peak picking routine could not only affect the precision of an extracted m/z but also the precision of the extracted abundance. Comparatively, a sum aggregated spectral bin, with a low bin purity, will only affect the precision of the assigned accurate mass of the bin.
+While the poor performance of both approaches would affect the potential to assign molecular formulas to accurate *m/z*, the poor performance of peak picking approaches would be more detrimental to downstream data mining.
+
+These peak picking approaches would also be unsuitable for processing direct infusion mass spectrometry (DIMS) data where the ion current is held stable for a period of time [@southam2017]. This would also yield peak shapes unsuitable for peak pick routines; however, the spectral binning approach would still be suitable for processing this data.
+
+Spectral binning is also comparatively faster than the *proFIA* approach, with processing taking approximately 1 second per file compared to the reported speed of approximately less than 15 seconds [@delabriere2017]. 
 The slower speed of *proFIA* is likely due to the complexity of the extra computational steps involved in the approach.
 
 Due to the simplicity of the spectral binning approach, a number of quality assurance steps should be taken to ensure that robust features can be selected during pre-treatment routines prior to downstream data mining. 
